@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<events>
+	<event>
+		<category>CAT1</category>
+		<action>ACT1</action>
+	</event>
+	<event>
+		<category>CAT1</category>
+		<action>ACT2</action>
+		<parameters>
+		</parameters>
+	</event>
+	<event>
+		<category>CAT2</category>
+		<action>ACT1</action>
+		<parameters>
+			<parameter>
+				<name>param1</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>param2</name>
+				<optional>true</optional>
+				<type>int</type>
+			</parameter>
+			<parameter>
+				<name>param3</name>
+				<optional>true</optional>
+				<type>date</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>CAT2</category>
+		<action>ACT2</action>
+		<parameters>
+			<parameter>
+				<name>param1</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Choice 1</name>
+						<value>C1</value>
+					</choice>
+					<choice>
+						<name>Choice 2</name>
+						<value>C2</value>
+					</choice>
+					<choice>
+						<name>Choice 3</name>
+						<value>C3</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>param2</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+</events>

@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<events>
+	<event>
+		<category>SCHEDULE</category>
+		<action>HOLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>CANCEL</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>RELEASE</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>START</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>BUILD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>log file name</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>overwrite flag</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>schedule instance property definitions</name>
+				<optional>true</optional>
+				<type>map</type>
+			</parameter>
+			<parameter>
+				<name>named instance to build</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>BUILDHLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>log file name</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>overwrite flag</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>schedule instance property definitions</name>
+				<optional>true</optional>
+				<type>map</type>
+			</parameter>
+			<parameter>
+				<name>named instance to build</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>CHECK</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>log file name</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>options</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Slow - Circular</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>Normal - No Circular</name>
+						<value>N</value>
+					</choice>
+					<choice>
+						<name>Fast - Requires Only</name>
+						<value>S</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>CHECKALL</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>log file name</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>options</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Slow - Circular</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>Normal - No Circular</name>
+						<value>N</value>
+					</choice>
+					<choice>
+						<name>Fast - Requires Only</name>
+						<value>S</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>SCHEDULE</category>
+		<action>DELETE</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>log file name</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>ADD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>frequency name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job instance property definitions</name>
+				<optional>true</optional>
+				<type>map</type>
+			</parameter>
+			<parameter>
+				<name>reopen schedule</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+            <parameter>
+                <name>apply exceptions</name>
+                <optional>true</optional>
+                <type>text</type>
+                <choices>
+                    <choice>
+                        <name>Yes</name>
+                        <value>Y</value>
+                    </choice>
+                    <choice>
+                        <name>No</name>
+                        <value>N</value>
+                    </choice>
+                </choices>
+            </parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>ADDHLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>frequency name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job instance property definitions</name>
+				<optional>true</optional>
+				<type>map</type>
+			</parameter>
+            <parameter>
+                <name>reopen schedule</name>
+                <optional>true</optional>
+                <type>text</type>
+                <choices>
+                    <choice>
+                        <name>Yes</name>
+                        <value>Y</value>
+                    </choice>
+                    <choice>
+                        <name>No</name>
+                        <value>N</value>
+                    </choice>
+                </choices>
+            </parameter>
+            <parameter>
+                <name>apply exceptions</name>
+                <optional>true</optional>
+                <type>text</type>
+                <choices>
+                    <choice>
+                        <name>Yes</name>
+                        <value>Y</value>
+                    </choice>
+                    <choice>
+                        <name>No</name>
+                        <value>N</value>
+                    </choice>
+                </choices>
+            </parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>DELETE</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>HOLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>KILL</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>RELEASE</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>START</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>SKIP</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>CANCEL</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>RESTART</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>RESTARTHLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>GOOD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>BAD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>RESCHEDULE</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>next start rule</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Terminated</name>
+						<value>T</value>
+					</choice>
+					<choice>
+						<name>Started</name>
+						<value>S</value>
+					</choice>
+					<choice>
+						<name>Now</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>minutes</name>
+				<optional>false</optional>
+				<type>int</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>RESCHEDHLD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>next start rule</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Terminated</name>
+						<value>T</value>
+					</choice>
+					<choice>
+						<name>Started</name>
+						<value>S</value>
+					</choice>
+					<choice>
+						<name>Now</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>minutes</name>
+				<optional>false</optional>
+				<type>int</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>MACHGRP</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>machine group name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>MAXRUNTIME</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>minutes</name>
+				<optional>false</optional>
+				<type>int</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>PRIORITY</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>SAM priority</name>
+				<optional>false</optional>
+				<type>int</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>TAGADD</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>tags</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>TAGDEL</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>tags</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>USER</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>batch user</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>REVIEW</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOB</category>
+		<action>FIXED</action>
+		<parameters>
+			<parameter>
+				<name>schedule date</name>
+				<optional>false</optional>
+				<type>date</type>
+			</parameter>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>MACHINE</category>
+		<action>STATUS</action>
+		<parameters>
+			<parameter>
+				<name>machine name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>status</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Up state</name>
+						<value>U</value>
+					</choice>
+					<choice>
+						<name>Down state</name>
+						<value>D</value>
+					</choice>
+					<choice>
+						<name>Limited state</name>
+						<value>L</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>THRESHOLD</category>
+		<action>SET</action>
+		<parameters>
+			<parameter>
+				<name>threshold name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>THRESHOLD</category>
+		<action>DEL</action>
+		<parameters>
+			<parameter>
+				<name>threshold name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>THRESHOLD</category>
+		<action>RENAME</action>
+		<parameters>
+			<parameter>
+				<name>old threshold name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>new threshold name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>TOKEN</category>
+		<action>SET</action>
+		<parameters>
+			<parameter>
+				<name>token name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>TOKEN</category>
+		<action>ADD</action>
+		<parameters>
+			<parameter>
+				<name>token name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>TOKEN</category>
+		<action>DELETE</action>
+		<parameters>
+			<parameter>
+				<name>token name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>RESOURCE</category>
+		<action>SET</action>
+		<parameters>
+			<parameter>
+				<name>resource name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>RESOURCE</category>
+		<action>DEL</action>
+		<parameters>
+			<parameter>
+				<name>resource name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>RESOURCE</category>
+		<action>RENAME</action>
+		<parameters>
+			<parameter>
+				<name>old resource name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>new resource name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>CONSOLE</category>
+		<action>DISPLAY</action>
+		<parameters>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>COMMAND</action>
+		<parameters>
+			<parameter>
+				<name>path and command to run</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>working directory</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>batch user</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>EMAIL</action>
+		<parameters>
+			<parameter>
+				<name>to</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>cc</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>bcc</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>subject</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>attachments</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude prefix information from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>LOG</action>
+		<parameters>
+			<parameter>
+				<name>severity</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Informational</name>
+						<value>I</value>
+					</choice>
+					<choice>
+						<name>Warning</name>
+						<value>W</value>
+					</choice>
+					<choice>
+						<name>Error</name>
+						<value>E</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>eventid</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>event source</name>
+				<optional>true</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude prefix information from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>NETSEND</action>
+		<parameters>
+			<parameter>
+				<name>machine</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude prefix information from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>SNMP</action>
+		<parameters>
+			<parameter>
+				<name>severity</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Critical</name>
+						<value>1</value>
+					</choice>
+					<choice>
+						<name>Major</name>
+						<value>2</value>
+					</choice>
+					<choice>
+						<name>Minor</name>
+						<value>3</value>
+					</choice>
+					<choice>
+						<name>Warning</name>
+						<value>4</value>
+					</choice>
+					<choice>
+						<name>Information</name>
+						<value>5</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>eventid</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude notification id from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>SPOAL</action>
+		<parameters>
+			<parameter>
+				<name>text</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>severity</name>
+				<optional>false</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Critical</name>
+						<value>Critical</value>
+					</choice>
+					<choice>
+						<name>Major</name>
+						<value>Major</value>
+					</choice>
+					<choice>
+						<name>Minor</name>
+						<value>Minor</value>
+					</choice>
+					<choice>
+						<name>Warning</name>
+						<value>Warning</value>
+					</choice>
+					<choice>
+						<name>Informational</name>
+						<value>Informational</value>
+					</choice>
+					<choice>
+						<name>Indeterminate</name>
+						<value>Indeterminate</value>
+					</choice>
+					<choice>
+						<name>Clear</name>
+						<value>Clear</value>
+					</choice>
+				</choices>
+			</parameter>
+			<parameter>
+				<name>alarmid</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>alarmqual</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude notification id from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>SPOCO</action>
+		<parameters>
+			<parameter>
+				<name>instance</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>command</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>NOTIFY</category>
+		<action>TEXTMSG</action>
+		<parameters>
+			<parameter>
+				<name>to</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>message</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>exclude notification id from header</name>
+				<optional>true</optional>
+				<type>text</type>
+				<choices>
+					<choice>
+						<name>Yes</name>
+						<value>Y</value>
+					</choice>
+					<choice>
+						<name>No</name>
+						<value>N</value>
+					</choice>
+				</choices>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>PROPERTY</category>
+		<action>ADD</action>
+		<parameters>
+			<parameter>
+				<name>property name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>initial value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>PROPERTY</category>
+		<action>DELETE</action>
+		<parameters>
+			<parameter>
+				<name>property name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>PROPERTY</category>
+		<action>SET</action>
+		<parameters>
+			<parameter>
+				<name>property name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>value</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>CALENDAR</category>
+		<action>ADD</action>
+		<parameters>
+			<parameter>
+				<name>calendar name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>dates</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>CALENDAR</category>
+		<action>DEL</action>
+		<parameters>
+			<parameter>
+				<name>calendar name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>dates</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOBMASTER</category>
+		<action>BUILDSTATE</action>
+		<parameters>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>frequency name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>build state</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOBMASTER</category>
+		<action>TAGADD</action>
+		<parameters>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>frequency name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>tags</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+	<event>
+		<category>JOBMASTER</category>
+		<action>TAGDEL</action>
+		<parameters>
+			<parameter>
+				<name>schedule name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>job name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>frequency name</name>
+				<optional>false</optional>
+				<type>text</type>
+			</parameter>
+			<parameter>
+				<name>tags</name>
+				<optional>false</optional>
+				<type>list</type>
+			</parameter>
+		</parameters>
+	</event>
+</events>
