@@ -4,7 +4,7 @@
 
     <groupId>com.smatechnologies</groupId>
     <artifactId>opcon-commons</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>SMA OpCon Library Commons</name>
     <description>SMA OpCon Library Commons</description>
