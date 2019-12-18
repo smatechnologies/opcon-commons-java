@@ -8,10 +8,10 @@
 
     <name>SMA OpCon Library Commons</name>
     <description>SMA OpCon Library Commons</description>
-    <url>http://github.com/SMATechnologies/opcon-commons-java</url>
+    <url>https://github.com/SMATechnologies/opcon-commons-java</url>
     <organization>
         <name>SMA Technologies</name>
-        <url>http://www.smatechnologies.com/</url>
+        <url>https://www.smatechnologies.com</url>
     </organization>
 
     <developers>
