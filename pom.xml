@@ -157,17 +157,28 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>${nexus-staging-maven-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh-opcon</serverId>
+                    <nexusUrl>https://oss.sonatype.org</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
     <distributionManagement>
         <repository>
-            <id>sonatype-nexus-staging-opcon</id>
+            <id>ossrh-opcon</id>
             <name>Nexus Release Repository</name>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots-opcon</id>
+            <id>ossrh-opcon</id>
             <name>Sonatype Nexus Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
@@ -181,6 +192,7 @@
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
 
         <xml.bind.version>2.3.0</xml.bind.version>
         <activation.version>1.1.1</activation.version>
