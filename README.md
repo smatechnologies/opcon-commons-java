@@ -8,9 +8,46 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
 
 # Prerequisites
 
+Java 11
 
 # Instructions
 
+Available from Central Maven Repository (https://search.maven.org/artifact/com.smatechnologies/opcon-commons):
+```
+<dependency>
+    <groupId>com.smatechnologies</groupId>
+    <artifactId>opcon-commons</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
+# Manually Deploy (authorised person only)
+
+## Prerequisites
+
+- Maven
+- GNUPG (https://gnupg.org) or GPG4Win (https://gpg4win.org)
+
+## Prepare
+
+- Import Keys:
+  ```
+  gpg --import smatechnologies.com_pub.gpg
+  gpg --allow-secret-key-import --import smatechnologies.com_sec.gpg
+  ```
+
+## Deploy
+
+
+- Get KeyName from commands:
+```
+gpg --list-keys
+gpg --list-secret-keys
+```
+- Deploy
+```
+mvn -Dgpg.keyname=FROM_GPG_LIST_KEYS_COMMAND -Dgpg.passphrase=PASSPHRASE clean deploy
+```
 
 # License
 Copyright 2019 SMA Technologies
