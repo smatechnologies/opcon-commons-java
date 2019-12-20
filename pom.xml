@@ -172,6 +172,12 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>deploy</id>
+        </profile>
+    </profiles>
+
     <distributionManagement>
         <repository>
             <id>ossrh-opcon</id>
