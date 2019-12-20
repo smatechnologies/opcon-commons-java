@@ -2,15 +2,24 @@ package com.smatechnologies.opcon.commons.test.util;
 
 import com.smatechnologies.opcon.commons.util.OpconPathUtil;
 import org.junit.Assert;
+import org.junit.Assume;
+import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import java.nio.file.Paths;
 
+import static com.smatechnologies.opcon.commons.util.OSUtil.isWindows;
+
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class OpconPathUtilTest {
+
+    @Before
+    public void windowsOnly() {
+        Assume.assumeTrue(isWindows());
+    }
 
     @Test
     public void test01OsInfoNormal() {
