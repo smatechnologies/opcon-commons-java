@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/SMATechnologies/opcon-commons-java/workflows/Deploy/badge.svg)](https://github.com/SMATechnologies/opcon-commons-java/actions)
+
 # OpCon Commons library
 Java commons library for OpCon
 
