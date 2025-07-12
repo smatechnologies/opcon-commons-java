@@ -203,7 +203,7 @@
         <powermock.version>1.6.6</powermock.version>
         <slf4j.version>1.7.25</slf4j.version>
 
-        <commons-lang3.version>3.7</commons-lang3.version>
+        <commons-lang3.version>3.18.0</commons-lang3.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
